@@ -1,0 +1,10 @@
+CREDITS
+-------
+
+Daniel Austin, Kewlio.net Limited	<daniel@kewlio.net>
+	Coding and maintenance of code base
+	Providing Cisco and Zebra routers for development
+
+James Jun, OCCAID Project		http://www.occaid.org/
+	Providing a Juniper login to enable juniper development of IPv6 commands
+

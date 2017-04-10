@@ -1,0 +1,95 @@
+2015-10-25	Dan <daniel@kewlio.net>
+	* klg.php:
+	* klg_config.php:
+	* klg_router_functions.php: Add SSH2 support for router access
+
+2014-06-25	Dan <daniel@kewlio.net>
+	* klg.php:
+	* klg_config.php:
+	* klg_template.html:
+	* klg_router_functions.php: Fix HTML tags to work with more recent sites
+		Also fix a few bugs with talking to juniper/olive routers.
+
+2014-06-25	Dan <daniel@kewlio.net>
+	* klg.php: Convert from old-style PHP mysql to newer mysqli functions
+
+2012-04-25	Dan <daniel@kewlio.net>
+	* klg.php: Fix some warnings/errors with maximum reporting enabled in PHP.
+
+2012-04-25	Dan <daniel@kewlio.net>
+	* klg.php: Update SQL statements so they are correctly quoted etc.
+
+2012-04-25	Dan <daniel@kewlio.net>
+	* klg.php:
+	* klg_router_functions.php: update functions to remove deprecated warnings
+		for newer versions of PHP (e.g. 5.3.x) - update copyright.
+
+2008-04-11	Dan-m00 <daniel@undernet.org>
+	* klg.php:
+	* klg_router_functions.php: stop warnings/errors during socket functions
+		so that there are no ip/port disclosures.
+
+2005-07-17	Dan-m00 <daniel@kewlio.net>
+	* klg.php: added support to disable mysql and/or AS lookups and/or BGP
+	community lookups
+
+	* klg_config.php: added extra variables for the above.
+
+	* klg_README.txt: added documentation for the above new flags.
+
+2005-07-17	Dan-m00 <daniel@kewlio.net>
+	* klg.php: added support for juniper 'traceroute' and 'show route' cmds
+
+	* klg_config.php: added new flag for juniper 'show route' command
+
+	* klg_router_functions.php: added more juniper support
+
+2005-07-17	Dan-m00 <daniel@kewlio.net>
+	* klg_router_functions.php: updated 'exit' commands to 'quit' to be
+	more juniper friendly
+	Added telnet negotiation strings, and the start of juniper commands
+
+	* klg.php: added start of support for juniper commands.
+
+	* klg_config.php: added example juniper router
+
+	* CREDITS: new file, add thanks to people who provide help for the project.
+
+2005-07-17	Dan-m00 <daniel@kewlio.net>
+	* klg_router_functions.php: new file, moved router functions to here
+
+	* klg.php: moved router functions into klg_router_functions.php
+
+2005-07-17	Dan-m00 <daniel@kewlio.net>
+	* klg.php: added a selection for form method (GET/POST), if one is
+	not specified, default to 'POST'
+	added maximum width patch to all output from routers now.
+
+	* klg_config.php: added variable for the above (default to 'GET')
+
+2005-07-17	Dan-m00 <daniel@kewlio.net>
+	* klg.php: added a maximum width to output to stop the page breaking
+	when used in a template environment (e.g. in a table)
+
+	* klg_config.php: added $config["output_max_width"] for the above.
+
+	* klg_README.txt: added info about new output variable
+
+2005-07-17	Dan-m00 <daniel@kewlio.net>
+	* klg.php: added a link to sourceforge at the foot of all queries to
+	gather further interest in the project from people who run our code.
+
+2005-07-17	Dan-m00 <daniel@kewlio.net>
+	* klg.php: added extra error checking to variables (especially $server)
+	to resolve some errors with people specifying routers which are not
+	in the configuration file.  Also added html escaping to all variables.
+
+2005-07-17	Dan-m00 <daniel@kewlio.net>
+	* klg.php: added template system and restructured error output
+
+	* klg_config.php: added template name to configuration
+
+	* klg_template.html: new file (default template)
+
+	* klg_README.txt: added info about templates to the help file
+
